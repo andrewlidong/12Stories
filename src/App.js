@@ -1,5 +1,5 @@
 import React from 'react';
-import { HashRouter as Router, Routes, Route, Navigate, useLocation } from 'react-router-dom';
+import { HashRouter, Routes, Route, Navigate, useLocation } from 'react-router-dom';
 import { ThemeProvider, createTheme } from '@mui/material';
 import { keyframes } from '@mui/system';
 import Login from './components/Login';
@@ -80,6 +80,14 @@ function PageTransition({ children }) {
 }
 
 function App() {
+  return (
+    <HashRouter>
+      <AppContent />
+    </HashRouter>
+  );
+}
+
+function AppContent() {
   const [isAuthenticated, setIsAuthenticated] = React.useState(false);
   const location = useLocation();
 
