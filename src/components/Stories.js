@@ -558,7 +558,7 @@ function Stories() {
                 fontWeight: 700,
               }}
             >
-              Foreward
+              Foreword
             </Typography>
           </Box>
           <Typography
