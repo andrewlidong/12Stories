@@ -1,5 +1,5 @@
 import React from 'react';
-import { HashRouter, Routes, Route, Navigate, useLocation } from 'react-router-dom';
+import { HashRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { ThemeProvider, createTheme } from '@mui/material';
 import { keyframes } from '@mui/system';
 import Login from './components/Login';
@@ -80,7 +80,6 @@ function PageTransition({ children }) {
 
 function AppContent() {
   const [isAuthenticated, setIsAuthenticated] = React.useState(false);
-  const location = useLocation();
 
   const handleLogin = (password) => {
     if (password === "Andrew") {

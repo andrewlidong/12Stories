@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import {
   Box,
   TextField,
@@ -51,20 +52,18 @@ function Login({ onLogin }) {
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
   const [isFlipping, setIsFlipping] = useState(false);
+  const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     const success = onLogin(password);
     if (!success) {
       setError('Incorrect password. Try again!');
-      // Shake animation for error
       setIsFlipping(true);
       setTimeout(() => setIsFlipping(false), 100);
     } else {
-      // Play success sound
       successChime.currentTime = 0;
       successChime.play().catch(e => console.log('Error playing sound:', e));
-      // Success page flip
       setIsFlipping(true);
     }
   };
@@ -125,7 +124,7 @@ function Login({ onLogin }) {
           <Typography
             component="h1"
             variant="h3"
-            onClick={() => window.location.href = '/'}
+            onClick={() => navigate('/')}
             sx={{
               mb: 3,
               color: '#c41e3a',
