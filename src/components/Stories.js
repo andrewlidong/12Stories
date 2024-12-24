@@ -461,6 +461,150 @@ Andrew`
 const pageTurnSound = new Audio('https://www.soundjay.com/page-flip-01.mp3');
 pageTurnSound.volume = 0.5; // Adjust volume to 50%
 
+function StoryModal({ open, onClose, title, subtitle, content }) {
+  return (
+    <Modal
+      open={open}
+      onClose={onClose}
+      aria-labelledby="story-modal-title"
+      aria-describedby="story-modal-description"
+      sx={{
+        backdropFilter: 'blur(8px)',
+      }}
+    >
+      <Box
+        sx={{
+          position: 'fixed',
+          top: '50%',
+          left: '50%',
+          transform: 'translate(-50%, -50%)',
+          width: { xs: '90%', sm: '80%', md: '60%' },
+          maxHeight: '90vh',
+          bgcolor: 'background.paper',
+          borderRadius: '10px',
+          boxShadow: '0 24px 48px rgba(0,0,0,0.2)',
+          p: 4,
+          overflow: 'auto',
+          border: '1px solid rgba(255,255,255,0.2)',
+          background: 'rgba(255, 255, 255, 0.98)',
+          '&::-webkit-scrollbar': {
+            width: '8px',
+          },
+          '&::-webkit-scrollbar-track': {
+            background: 'rgba(0,0,0,0.1)',
+            borderRadius: '4px',
+          },
+          '&::-webkit-scrollbar-thumb': {
+            background: '#c41e3a',
+            borderRadius: '4px',
+            '&:hover': {
+              background: '#a01830',
+            },
+          },
+        }}
+      >
+        <IconButton
+          sx={{
+            position: 'absolute',
+            right: 16,
+            top: 16,
+            bgcolor: 'rgba(0,0,0,0.05)',
+            transition: 'all 0.3s ease',
+            zIndex: 10,
+            '&:hover': {
+              bgcolor: 'rgba(0,0,0,0.1)',
+              transform: 'rotate(90deg)',
+            },
+          }}
+          onClick={onClose}
+        >
+          <CloseIcon />
+        </IconButton>
+        <Typography
+          id="story-modal-title"
+          variant="h3"
+          component="h2"
+          sx={{
+            mb: 2,
+            color: '#c41e3a',
+            textAlign: 'center',
+            fontWeight: 700,
+            fontFamily: '"Dancing Script", cursive',
+            letterSpacing: '-0.5px',
+            fontSize: '2.5rem',
+          }}
+        >
+          {title}
+        </Typography>
+        <Typography
+          variant="h6"
+          sx={{
+            mb: 2,
+            color: '#666',
+            textAlign: 'center',
+            fontStyle: 'italic',
+            fontSize: '1.1rem',
+          }}
+        >
+          {subtitle}
+        </Typography>
+        <Typography
+          id="story-modal-description"
+          sx={{
+            color: '#2c3e50',
+            lineHeight: 1.6,
+            fontSize: '1.1rem',
+            whiteSpace: 'pre-line',
+            textAlign: 'justify',
+            fontFamily: '"Quicksand", sans-serif',
+            animation: `${storyFadeIn} 0.8s ease-out`,
+            px: 3,
+            py: 1,
+            '& p': {
+              marginBottom: '1em',
+              maxWidth: '65ch',
+              margin: '0 auto 1em auto',
+            },
+            '& strong': {
+              color: '#E67E22',
+              fontWeight: 600,
+              padding: '0 2px',
+            },
+            '& em': {
+              fontStyle: 'italic',
+              color: '#D68910',
+              padding: '0 2px',
+            },
+            '& p:first-of-type': {
+              fontSize: '1.1rem',
+              fontWeight: 500,
+              color: '#34495e',
+              borderLeft: '3px solid #c41e3a',
+              paddingLeft: '1em',
+              marginBottom: '1.5em',
+              background: 'linear-gradient(to right, rgba(196, 30, 58, 0.1), transparent)',
+              padding: '1em',
+              borderRadius: '0 4px 4px 0',
+              maxWidth: '100%',
+            },
+            '& p:last-child': {
+              marginTop: '1.5em',
+              fontStyle: 'italic',
+              textAlign: 'right',
+              color: '#7f8c8d',
+              borderTop: '1px solid rgba(0,0,0,0.1)',
+              paddingTop: '1em',
+              maxWidth: '100%',
+            },
+          }}
+        >
+          {content}
+        </Typography>
+      </Box>
+    </Modal>
+  );
+}
+
 function Stories() {
   const [selectedStory, setSelectedStory] = useState(null);
   const [showIntro, setShowIntro] = useState(true);
@@ -682,209 +826,13 @@ function Stories() {
           ))}
         </Grid>
 
-        <Modal
+        <StoryModal
           open={!!selectedStory}
           onClose={handleStoryClose}
-          aria-labelledby="story-modal-title"
-          sx={{
-            backdropFilter: 'blur(8px)',
-          }}
-        >
-          <Box
-            sx={{
-              position: 'fixed',
-              top: '50%',
-              left: '50%',
-              transform: 'translate(-50%, -50%)',
-              width: { xs: '90%', sm: '80%', md: '60%' },
-              maxHeight: '90vh',
-              bgcolor: 'background.paper',
-              borderRadius: '10px',
-              boxShadow: '0 24px 48px rgba(0,0,0,0.2)',
-              p: 6,
-              overflow: 'auto',
-              border: '1px solid rgba(255,255,255,0.2)',
-              background: 'rgba(255, 255, 255, 0.98)',
-              transformOrigin: 'center center',
-              animation: isFlipping 
-                ? `${pageFlip} 0.5s ease-in-out forwards`
-                : `${openBook} 0.7s ease-out`,
-              '&::before': {
-                content: '""',
-                position: 'absolute',
-                top: 0,
-                left: 0,
-                right: 0,
-                bottom: 0,
-                background: 'linear-gradient(to right, rgba(0,0,0,0.05) 0%, rgba(0,0,0,0) 5%, rgba(0,0,0,0) 95%, rgba(0,0,0,0.05) 100%)',
-                borderRadius: 'inherit',
-                pointerEvents: 'none',
-              },
-              '&::after': {
-                content: '""',
-                position: 'absolute',
-                left: '50%',
-                top: 0,
-                bottom: 0,
-                width: '1px',
-                background: 'rgba(0,0,0,0.1)',
-                boxShadow: '0 0 8px rgba(0,0,0,0.1)',
-              },
-              '&::-webkit-scrollbar': {
-                width: '8px',
-              },
-              '&::-webkit-scrollbar-track': {
-                background: 'rgba(0,0,0,0.1)',
-                borderRadius: '4px',
-              },
-              '&::-webkit-scrollbar-thumb': {
-                background: '#c41e3a',
-                borderRadius: '4px',
-                '&:hover': {
-                  background: '#a01830',
-                },
-              },
-            }}
-          >
-            <IconButton
-              sx={{
-                position: 'absolute',
-                right: 16,
-                top: 16,
-                bgcolor: 'rgba(0,0,0,0.05)',
-                transition: 'all 0.3s ease',
-                zIndex: 10,
-                '&:hover': {
-                  bgcolor: 'rgba(0,0,0,0.1)',
-                  transform: 'rotate(90deg)',
-                },
-              }}
-              onClick={handleStoryClose}
-            >
-              <CloseIcon />
-            </IconButton>
-            {selectedStory && (
-              <Box sx={{ 
-                position: 'relative',
-                '&::before': {
-                  content: '""',
-                  position: 'absolute',
-                  top: -24,
-                  left: -24,
-                  right: -24,
-                  bottom: -24,
-                  background: 'linear-gradient(45deg, rgba(0,0,0,0.02) 25%, transparent 25%, transparent 75%, rgba(0,0,0,0.02) 75%), linear-gradient(45deg, rgba(0,0,0,0.02) 25%, transparent 25%, transparent 75%, rgba(0,0,0,0.02) 75%)',
-                  backgroundSize: '20px 20px',
-                  backgroundPosition: '0 0, 10px 10px',
-                  pointerEvents: 'none',
-                },
-              }}>
-                <Typography
-                  id="story-modal-title"
-                  variant="h3"
-                  component="h2"
-                  sx={{
-                    mb: 4,
-                    color: '#c41e3a',
-                    textAlign: 'center',
-                    fontWeight: 700,
-                    fontFamily: '"Dancing Script", cursive',
-                    letterSpacing: '-0.5px',
-                    fontSize: '3rem',
-                    position: 'relative',
-                    '&::after': {
-                      content: '""',
-                      position: 'absolute',
-                      bottom: -10,
-                      left: '25%',
-                      width: '50%',
-                      height: '1px',
-                      background: 'linear-gradient(90deg, transparent, rgba(196, 30, 58, 0.5), transparent)',
-                    },
-                  }}
-                >
-                  {selectedStory.title}
-                </Typography>
-                <Typography
-                  sx={{
-                    color: '#2c3e50',
-                    lineHeight: 2.5,
-                    fontSize: '1.3rem',
-                    whiteSpace: 'pre-line',
-                    textAlign: 'justify',
-                    fontFamily: '"Quicksand", sans-serif',
-                    animation: `${storyFadeIn} 0.8s ease-out`,
-                    px: 6,
-                    py: 2,
-                    position: 'relative',
-                    '& p': {
-                      marginBottom: '2em',
-                      maxWidth: '65ch',
-                      margin: '0 auto 2em auto',
-                    },
-                    '& ::first-letter': {
-                      fontSize: '4em',
-                      fontFamily: '"Dancing Script", cursive',
-                      fontWeight: 700,
-                      color: '#c41e3a',
-                      float: 'left',
-                      marginRight: '16px',
-                      marginBottom: '8px',
-                      lineHeight: '1',
-                      textShadow: '2px 2px 4px rgba(0,0,0,0.1)',
-                    },
-                    '& strong': {
-                      color: '#E67E22',
-                      fontWeight: 600,
-                      animation: `${letterSpacing} 3s infinite`,
-                      padding: '0 2px',
-                    },
-                    '& em': {
-                      fontStyle: 'italic',
-                      color: '#D68910',
-                      padding: '0 2px',
-                    },
-                    '& ::selection': {
-                      background: 'rgba(230, 126, 34, 0.2)',
-                      color: '#c41e3a',
-                    },
-                    '& p:first-of-type': {
-                      fontSize: '1.4rem',
-                      fontWeight: 500,
-                      color: '#34495e',
-                      borderLeft: '4px solid #c41e3a',
-                      paddingLeft: '24px',
-                      marginBottom: '3em',
-                      background: 'linear-gradient(to right, rgba(196, 30, 58, 0.1), transparent)',
-                      padding: '1.5em 2em',
-                      borderRadius: '0 8px 8px 0',
-                      animation: `${fadeIn} 1s ease-out`,
-                      maxWidth: '100%',
-                    },
-                    '& p:not(:first-of-type)': {
-                      animation: `${storyFadeIn} 0.8s ease-out`,
-                      animationFillMode: 'both',
-                      '&:nth-of-type(2)': { animationDelay: '0.2s' },
-                      '&:nth-of-type(3)': { animationDelay: '0.4s' },
-                      '&:nth-of-type(4)': { animationDelay: '0.6s' },
-                    },
-                    '& p:last-child': {
-                      marginTop: '3em',
-                      fontStyle: 'italic',
-                      textAlign: 'right',
-                      color: '#7f8c8d',
-                      borderTop: '1px solid rgba(0,0,0,0.1)',
-                      paddingTop: '1.5em',
-                      maxWidth: '100%',
-                    },
-                  }}
-                >
-                  {selectedStory.content}
-                </Typography>
-              </Box>
-            )}
-          </Box>
-        </Modal>
+          title={selectedStory?.title}
+          subtitle={selectedStory?.subtitle}
+          content={selectedStory?.content}
+        />
       </Container>
     </Box>
   );
