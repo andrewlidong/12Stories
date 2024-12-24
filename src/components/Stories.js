@@ -78,102 +78,49 @@ const stories = [
   { 
     title: "The Elf at the Window",
     subtitle: "Story One",
-    content: `*On a crisp Christmas Eve, the snow blanketed the town,
-The streets had grown quiet, the lights had dimmed down.
-In a cozy apartment adorned with delight,
-Andrew and Kelly prepared for the night.*
+    content: `On a crisp Christmas Eve, the snow blanketed the town, The streets had grown quiet, the lights had dimmed down. In a cozy apartment adorned with delight, Andrew and Kelly prepared for the night.
 
-"Can you believe it's been nearly a year," **Andrew** said with a grin,
-his voice full of cheer.
-"From the Penrose we met, and oh, what a start,
-It's a memory etched right here in my heart."
+"Can you believe it’s been nearly a year," Andrew said with a grin, his voice full of cheer. "From the Penrose we met, and oh, what a start, It’s a memory etched right here in my heart."
 
-**Kelly** looked up from her Instagram scroll,
-Her smile as warm as a hot cocoa bowl.
-"Who knew a FaceTime with Mom on my way,
-Would lead to your nose being bitten each day?"
+Kelly looked up from her Instagram scroll, Her smile as warm as a hot cocoa bowl. "Who knew a FaceTime with Mom on my way, Would lead to your nose being bitten each day?"
 
-**Andrew** laughed, a sound hearty and bright,
-"You sure have a knack for keeping things light."
-They sipped on their cocoa, their hearts full of glee,
-Recalling their trip to Paris and that sweet baguette spree.
+Andrew laughed, a sound hearty and bright, "You sure have a knack for keeping things light." They sipped on their cocoa, their hearts full of glee, Recalling their trip to Paris and that sweet baguette spree.
 
-"All those layers you wore, like a puffy-clothes queen,"
-**Andrew** teased, his eyes twinkling with sheen.
-"But it worked, didn't it?" **Kelly** replied,
-"I'll always outsmart a weight limit!"
+"All those layers you wore, like a puffy-clothes queen," Andrew teased, his eyes twinkling with sheen. "But it worked, didn’t it?" Kelly replied, "I’ll always outsmart a weight limit!"
 
-But as the clock struck midnight, they heard a loud rap,
-At the frosty-paned window came a small tapping tap.
-They peered through the glass, and what did appear?
-A shivering elf with a hat on his ear.
+But as the clock struck midnight, they heard a loud rap, At the frosty-paned window came a small tapping tap. They peered through the glass, and what did appear? A shivering elf with a hat on his ear.
 
-"Let me in, I implore you, the wind's in a roar!
-My name's *Pip*, and I need your help, I'm sure."
-Bemused but intrigued, **Andrew** opened the way,
-And *Pip* tumbled in, brushing snowflakes away.
+"Let me in, I implore you, the wind's in a roar! My name’s Pip, and I need your help, I’m sure." Bemused but intrigued, Andrew opened the way, And Pip tumbled in, brushing snowflakes away.
 
-"Santa's in trouble, he's overwhelmed with the load,
-So he's asked me to find couples with a generous code.
-You two fit the bill, your spirits so bright,
-Will you help spread the joy on this magical night?"
+"Santa’s in trouble, he’s overwhelmed with the load, So he’s asked me to find couples with a generous code. You two fit the bill, your spirits so bright, Will you help spread the joy on this magical night?"
 
-With a snap of his fingers, their room came alive,
-With glittering costumes and sleighs to arrive.
-Red and green outfits with jingles that rang,
-And a sleigh pulled by reindeer that practically sang.
+With a snap of his fingers, their room came alive, With glittering costumes and sleighs to arrive. Red and green outfits with jingles that rang, And a sleigh pulled by reindeer that practically sang.
 
-"This is bonkers!" said **Andrew**, climbing aboard,
-While **Kelly** chimed in, "Let's spread joy galore!"
-Clinging to his arm as she always would do,
-**Kelly** whispered, "We'll make this night something new."
+"This is bonkers!" said Andrew, climbing aboard, While Kelly chimed in, "Let’s spread joy galore!" Clinging to his arm as she always would do, Kelly whispered, "We’ll make this night something new."
 
-Through the skies they did soar, the stars guiding their flight,
-As *Pip* handed them lists on this magical night.
-"In Brooklyn, a boy dreams of tracks and trains,
-leave this locomotive to spark his brain."
+Through the skies they did soar, the stars guiding their flight, As Pip handed them lists on this magical night. "In Brooklyn, a boy dreams of tracks and trains, leave this locomotive to spark his brain."
 
-"And in Harlem, a girl who dreams of ballet,
-Needs this music box to help light her way."
-Each stop was a story, each gift held a gleam,
-Fulfilling the hopes of a child's Christmas dream.
+"And in Harlem, a girl who dreams of ballet, Needs this music box to help light her way." Each stop was a story, each gift held a gleam, Fulfilling the hopes of a child’s Christmas dream.
 
-When they reached Queens, **Kelly** gasped at the sight,
-A girl with a hippo clutched tight through the night.
-"It's *Moo Deng*!" **Kelly** whispered, her heart feeling warm,
-"This plush Santa hippo will keep her from harm."
+When they reached Queens, Kelly gasped at the sight, A girl with a hippo clutched tight through the night. "It’s Moo Deng!" Kelly whispered, her heart feeling warm, "This plush Santa hippo will keep her from harm."
 
-**Andrew** chuckled, "You always add flair,
-Every gift you give shows how much you care."
-Through the night they delivered, spreading good cheer,
-With laughter and love as their reindeer steered.
+Andrew chuckled, "You always add flair, Every gift you give shows how much you care." Through the night they delivered, spreading good cheer, With laughter and love as their reindeer steered.
 
-"Ho ho!" cried *Pip* as they neared their last tree,
-A sparkling park where joy danced wild and free.
-They handed out gifts, their hearts swelling with pride,
-As the magic of Christmas was shared far and wide.
+"Ho ho!" cried Pip as they neared their last tree, A sparkling park where joy danced wild and free. They handed out gifts, their hearts swelling with pride, As the magic of Christmas was shared far and wide.
 
-When the last box was placed, *Pip* clapped with delight,
-"You two are amazing, you've brightened the night."
-With a snap and a shimmer, the sleigh whisked away,
-And they found themselves home at the break of new day.
+When the last box was placed, Pip clapped with delight, "You two are amazing, you’ve brightened the night." With a snap and a shimmer, the sleigh whisked away, And they found themselves home at the break of new day.
 
-Back in their apartment, the magic still fresh,
-**Kelly** snuggled to **Andrew**, their hearts did enmesh.
-"That was the best Christmas, no question, no fight."
-**Andrew** kissed her and said, "To more magic each night."
+Back in their apartment, the magic still fresh, Kelly snuggled to Andrew, their hearts did enmesh. "That was the best Christmas, no question, no fight." Andrew kissed her and said, "To more magic each night."
 
-*And as Christmas morn peeked through the pane,
-They dreamed of adventures and laughter again.
-For Andrew and Kelly, the night had shown clear,
-That love, like the season, grows brighter each year.*`
+And as Christmas morn peeked through the pane, They dreamed of adventures and laughter again. For Andrew and Kelly, the night had shown clear, That love, like the season, grows brighter each year.
+`
   },
   { 
     title: "Queen of Hearts",
     subtitle: "Story Two",
     content: `It started at sunrise, the air crisp and bright,
 At Moo Deng’s Khao Kheow, the mood was just right.
-With Kelly and Andrew, the zookeeper pair,
+With Kelly and Andrew, the zookeeper pair, 
 And Moo Deng the hippo, no one could compare.
 
 “Oh, what shall we do on this fine, sunny day?”
