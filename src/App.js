@@ -49,7 +49,6 @@ const theme = createTheme({
 });
 
 function PageTransition({ children }) {
-  const location = useLocation();
   const [isFlipping, setIsFlipping] = React.useState(false);
   const [content, setContent] = React.useState(children);
 
@@ -79,14 +78,6 @@ function PageTransition({ children }) {
   );
 }
 
-function App() {
-  return (
-    <HashRouter>
-      <AppContent />
-    </HashRouter>
-  );
-}
-
 function AppContent() {
   const [isAuthenticated, setIsAuthenticated] = React.useState(false);
   const location = useLocation();
@@ -103,7 +94,7 @@ function AppContent() {
     <ThemeProvider theme={theme}>
       <div className="App" style={{ perspective: '1000px' }}>
         <PageTransition>
-          <Routes location={location}>
+          <Routes>
             <Route 
               path="/" 
               element={
@@ -128,6 +119,14 @@ function AppContent() {
         </PageTransition>
       </div>
     </ThemeProvider>
+  );
+}
+
+function App() {
+  return (
+    <HashRouter>
+      <AppContent />
+    </HashRouter>
   );
 }
 
