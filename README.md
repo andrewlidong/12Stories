@@ -1,4 +1,4 @@
-# 12 Days of Christmas - A Digital Storybook
+# 12 Short Stories - A Digital Storybook
 
 A magical digital storybook built with React, featuring twelve enchanting stories. This web application provides an interactive and immersive reading experience with beautiful animations, page-turning effects, and a responsive design.
 
@@ -22,12 +22,12 @@ A magical digital storybook built with React, featuring twelve enchanting storie
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/12-days-christmas.git
+   git clone https://github.com/yourusername/12-short-stories.git
    ```
 
 2. Install dependencies:
    ```bash
-   cd 12-days-christmas
+   cd 12-short-stories
    npm install
    ```
 
