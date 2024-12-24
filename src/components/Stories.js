@@ -687,7 +687,7 @@ function StoryModal({ open, onClose, title, subtitle, content }) {
           variant="h6"
           sx={{
             mb: 3,
-            color: '#666',
+            color: '#c41e3a',
             textAlign: 'center',
             fontStyle: 'italic',
             fontSize: '1.1rem',
@@ -713,13 +713,13 @@ function StoryModal({ open, onClose, title, subtitle, content }) {
               margin: '0 auto 2em auto',
             },
             '& strong': {
-              color: '#E67E22',
+              color: '#c41e3a',
               fontWeight: 600,
               padding: '0 2px',
             },
             '& em': {
               fontStyle: 'italic',
-              color: '#D68910',
+              color: '#c41e3a',
               padding: '0 2px',
             },
             '& p:first-of-type': {
@@ -738,7 +738,7 @@ function StoryModal({ open, onClose, title, subtitle, content }) {
               marginTop: '2em',
               fontStyle: 'italic',
               textAlign: 'right',
-              color: '#7f8c8d',
+              color: '#c41e3a',
               borderTop: '1px solid rgba(0,0,0,0.1)',
               paddingTop: '1em',
               maxWidth: '100%',
@@ -868,11 +868,11 @@ function Stories() {
           onClick={() => handleStoryOpen(introContent)}
         >
           <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', mb: 3 }}>
-            <BookIcon sx={{ fontSize: 40, color: '#E67E22', mr: 2 }} />
+            <BookIcon sx={{ fontSize: 40, color: '#c41e3a', mr: 2 }} />
             <Typography
               variant="h3"
               sx={{
-                color: '#E67E22',
+                color: '#c41e3a',
                 fontFamily: '"Dancing Script", cursive',
                 fontWeight: 700,
               }}
@@ -882,7 +882,7 @@ function Stories() {
           </Box>
           <Typography
             sx={{
-              color: '#D68910',
+              color: '#c41e3a',
               textAlign: 'center',
               fontFamily: '"Quicksand", sans-serif',
               fontSize: '1.2rem',
@@ -914,7 +914,7 @@ function Stories() {
                     transform: 'translateY(-8px) scale(1.02)',
                     boxShadow: '0 12px 48px rgba(0,0,0,0.2)',
                     '& .card-title': {
-                      background: 'linear-gradient(90deg, #E67E22, #F1C40F, #E67E22)',
+                      background: 'linear-gradient(90deg, #c41e3a, #ff4d4d, #c41e3a)',
                       WebkitBackgroundClip: 'text',
                       WebkitTextFillColor: 'transparent',
                       backgroundSize: '200% auto',
@@ -929,7 +929,7 @@ function Stories() {
                     component="h2"
                     className="card-title"
                     sx={{
-                      color: '#E67E22',
+                      color: '#c41e3a',
                       fontWeight: 700,
                       textAlign: 'center',
                       mb: 2,
@@ -943,7 +943,7 @@ function Stories() {
                   {story.subtitle && (
                     <Typography
                       sx={{
-                        color: '#D68910',
+                        color: '#c41e3a',
                         textAlign: 'center',
                         fontStyle: 'italic',
                         fontSize: '1.3rem',
@@ -962,7 +962,7 @@ function Stories() {
                   )}
                   <Typography
                     sx={{
-                      color: '#D68910',
+                      color: '#c41e3a',
                       textAlign: 'center',
                       fontStyle: 'italic',
                       fontSize: '1rem',
