@@ -1,5 +1,5 @@
 import React from 'react';
-import { Routes, Route, Navigate, useLocation } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route, Navigate, useLocation } from 'react-router-dom';
 import { ThemeProvider, createTheme } from '@mui/material';
 import { keyframes } from '@mui/system';
 import Login from './components/Login';
