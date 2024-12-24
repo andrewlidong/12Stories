@@ -56,34 +56,51 @@ const openBook = keyframes`
   }
 `;
 
+const storyFadeIn = keyframes`
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+`;
+
+const letterSpacing = keyframes`
+  0% { letter-spacing: normal; }
+  50% { letter-spacing: 2px; }
+  100% { letter-spacing: normal; }
+`;
+
 // Replace these with your actual stories
 const stories = [
   { 
     title: "The Elf at the Window",
     subtitle: "Story One",
-    content: `On a crisp Christmas Eve, the snow blanketed the town,
+    content: `*On a crisp Christmas Eve, the snow blanketed the town,
 The streets had grown quiet, the lights had dimmed down.
 In a cozy apartment adorned with delight,
-Andrew and Kelly prepared for the night.
+Andrew and Kelly prepared for the night.*
 
-"Can you believe it's been nearly a year," Andrew said with a grin,
+"Can you believe it's been nearly a year," **Andrew** said with a grin,
 his voice full of cheer.
 "From the Penrose we met, and oh, what a start,
 It's a memory etched right here in my heart."
 
-Kelly looked up from her Instagram scroll,
+**Kelly** looked up from her Instagram scroll,
 Her smile as warm as a hot cocoa bowl.
 "Who knew a FaceTime with Mom on my way,
 Would lead to your nose being bitten each day?"
 
-Andrew laughed, a sound hearty and bright,
+**Andrew** laughed, a sound hearty and bright,
 "You sure have a knack for keeping things light."
 They sipped on their cocoa, their hearts full of glee,
 Recalling their trip to Paris and that sweet baguette spree.
 
 "All those layers you wore, like a puffy-clothes queen,"
-Andrew teased, his eyes twinkling with sheen.
-"But it worked, didn't it?" Kelly replied,
+**Andrew** teased, his eyes twinkling with sheen.
+"But it worked, didn't it?" **Kelly** replied,
 "I'll always outsmart a weight limit!"
 
 But as the clock struck midnight, they heard a loud rap,
@@ -92,9 +109,9 @@ They peered through the glass, and what did appear?
 A shivering elf with a hat on his ear.
 
 "Let me in, I implore you, the wind's in a roar!
-My name's Pip, and I need your help, I'm sure."
-Bemused but intrigued, Andrew opened the way,
-And Pip tumbled in, brushing snowflakes away.
+My name's *Pip*, and I need your help, I'm sure."
+Bemused but intrigued, **Andrew** opened the way,
+And *Pip* tumbled in, brushing snowflakes away.
 
 "Santa's in trouble, he's overwhelmed with the load,
 So he's asked me to find couples with a generous code.
@@ -106,13 +123,13 @@ With glittering costumes and sleighs to arrive.
 Red and green outfits with jingles that rang,
 And a sleigh pulled by reindeer that practically sang.
 
-"This is bonkers!" said Andrew, climbing aboard,
-While Kelly chimed in, "Let's spread joy galore!"
+"This is bonkers!" said **Andrew**, climbing aboard,
+While **Kelly** chimed in, "Let's spread joy galore!"
 Clinging to his arm as she always would do,
-Kelly whispered, "We'll make this night something new."
+**Kelly** whispered, "We'll make this night something new."
 
 Through the skies they did soar, the stars guiding their flight,
-As Pip handed them lists on this magical night.
+As *Pip* handed them lists on this magical night.
 "In Brooklyn, a boy dreams of tracks and trains,
 leave this locomotive to spark his brain."
 
@@ -121,35 +138,35 @@ Needs this music box to help light her way."
 Each stop was a story, each gift held a gleam,
 Fulfilling the hopes of a child's Christmas dream.
 
-When they reached Queens, Kelly gasped at the sight,
+When they reached Queens, **Kelly** gasped at the sight,
 A girl with a hippo clutched tight through the night.
-"It's Moo Deng!" Kelly whispered, her heart feeling warm,
+"It's *Moo Deng*!" **Kelly** whispered, her heart feeling warm,
 "This plush Santa hippo will keep her from harm."
 
-Andrew chuckled, "You always add flair,
+**Andrew** chuckled, "You always add flair,
 Every gift you give shows how much you care."
 Through the night they delivered, spreading good cheer,
 With laughter and love as their reindeer steered.
 
-"Ho ho!" cried Pip as they neared their last tree,
+"Ho ho!" cried *Pip* as they neared their last tree,
 A sparkling park where joy danced wild and free.
 They handed out gifts, their hearts swelling with pride,
 As the magic of Christmas was shared far and wide.
 
-When the last box was placed, Pip clapped with delight,
+When the last box was placed, *Pip* clapped with delight,
 "You two are amazing, you've brightened the night."
 With a snap and a shimmer, the sleigh whisked away,
 And they found themselves home at the break of new day.
 
 Back in their apartment, the magic still fresh,
-Kelly snuggled to Andrew, their hearts did enmesh.
+**Kelly** snuggled to **Andrew**, their hearts did enmesh.
 "That was the best Christmas, no question, no fight."
-Andrew kissed her and said, "To more magic each night."
+**Andrew** kissed her and said, "To more magic each night."
 
-And as Christmas morn peeked through the pane,
+*And as Christmas morn peeked through the pane,
 They dreamed of adventures and laughter again.
 For Andrew and Kelly, the night had shown clear,
-That love, like the season, grows brighter each year.`
+That love, like the season, grows brighter each year.*`
   },
   { 
     title: "Queen of Hearts",
@@ -328,37 +345,37 @@ And so, under the watchful eye of Bethel Woods, they turned homeward, the groove
   { 
     title: "The Pirate's Star",
     subtitle: "Story Ten",
-    content: `The clouds gathered thick and heavy over the port city of Flushing, their gray tendrils whispering of storms to come. Andrew arrived at Paris Baguette, the bustling hub where Kelly stood at the heart of the crowd. She was no ordinary sailor this day—her presence commanded attention as she hosted a fan gathering, her eyes sparkling like treasure beneath the café’s warm lights.
-On the table before her lay a tray of Ateez-inspired donuts, each a confectionary marvel, crafted to honor the legendary pirate crew. Andrew selected one, its glaze shimmering faintly like the dew on a ship’s mast at sunrise. He bit into it, savoring the unexpected burst of spice and sweetness.
+    content: `The clouds gathered thick and heavy over the port city of Flushing, their gray tendrils whispering of storms to come. Andrew arrived at Paris Baguette, the bustling hub where Kelly stood at the heart of the crowd. She was no ordinary sailor this day—her presence commanded attention as she hosted a fan gathering, her eyes sparkling like treasure beneath the café's warm lights.
+On the table before her lay a tray of Ateez-inspired donuts, each a confectionary marvel, crafted to honor the legendary pirate crew. Andrew selected one, its glaze shimmering faintly like the dew on a ship's mast at sunrise. He bit into it, savoring the unexpected burst of spice and sweetness.
 “What do you think?” Kelly asked, her voice carrying over the hum of the gathering.
 “Unexpected,” Andrew said with a grin. “But I like it.”
-From there, they joined Kelly’s trusted crewmates, Thea and Keena, for a meal in the great hall of the Flushing food court. The sailors shared tales of past voyages and planned for the evening ahead, their laughter filling the air as Andrew devoured a skewer of Taiwanese sausage, its smoky tang lingering like a memory of distant shores.
-But the clouds began to weep, first in a light drizzle and then in torrents. The crew summoned a carriage to carry them to Citifield, the grand harbor where Ateez’s ship, The Aurora, would dock for the night’s epic spectacle. The rain lashed against the windows, an ominous drumbeat as they arrived at the venue.
-The storm was unrelenting, forcing the evening’s start to delay. But the faithful—those who knew the power of the Pirate Kings—waited with unwavering resolve. At last, as the winds calmed and the rain subsided, the time came.
+From there, they joined Kelly's trusted crewmates, Thea and Keena, for a meal in the great hall of the Flushing food court. The sailors shared tales of past voyages and planned for the evening ahead, their laughter filling the air as Andrew devoured a skewer of Taiwanese sausage, its smoky tang lingering like a memory of distant shores.
+But the clouds began to weep, first in a light drizzle and then in torrents. The crew summoned a carriage to carry them to Citifield, the grand harbor where Ateez's ship, The Aurora, would dock for the night's epic spectacle. The rain lashed against the windows, an ominous drumbeat as they arrived at the venue.
+The storm was unrelenting, forcing the evening's start to delay. But the faithful—those who knew the power of the Pirate Kings—waited with unwavering resolve. At last, as the winds calmed and the rain subsided, the time came.
 The stage erupted in light, a beacon slicing through the mist. Ateez emerged, their forms cloaked in shadow until the music roared to life. Their flagship, The Aurora, took flight in the minds of all who watched, its glowing sails leading the charge into uncharted territories.
 The concert unfolded like a journey across treacherous seas and wondrous lands. With Wonderland, the crew set the tone, their harmonies and choreography drawing the crowd into the pulse of adventure. Each member commanded their post—Hongjoong, the charismatic captain; San, the fierce warrior; Wooyoung, the playful navigator—each pouring their soul into the voyage.
 Midway through the set, the skies seemed to clear with Wave, the song rolling across the audience like the gentle tide before a storm. The fans, their light sticks raised, became a sea of stars, guiding The Aurora through the night.
 Then came the battle anthem, Answer, a performance so intense it felt like the clash of swords in a storm. Andrew, swept up in the ferocity of the moment, joined the shouts of the crowd, his voice rising with thousands of others to challenge the heavens themselves.
 But the final assault came with the encore. Guerrilla blazed forth like a cannon shot, the stage glowing red with rebellion. The crew of Ateez delivered every ounce of their strength, their movements precise and relentless, until the last note echoed into the night.
-For Andrew’s first Ateez concert was not a mere spectacle. It was a legend, a chapter in a tale of courage and connection, a night when even the fiercest storm could not hold back the crew of The Aurora.
+For Andrew's first Ateez concert was not a mere spectacle. It was a legend, a chapter in a tale of courage and connection, a night when even the fiercest storm could not hold back the crew of The Aurora.
 `
   },
   { 
     title: "Enchanted Dreams",
     subtitle: "Story Eleven",
     content: `The magic of Disneyland Paris sparkled in the crisp December air. Twinkling lights lined the pathways, and the scent of freshly baked gingerbread mingled with the chill of winter. Andrew and Kelly walked hand in hand down Main Street, their eyes wide with wonder as the Sleeping Beauty Castle shimmered ahead, aglow with thousands of tiny lights.
-"It’s like stepping into a dream," Kelly said, her voice soft with awe. 
-Andrew grinned. "It’s more than a dream. It’s magic."
-As they approached the castle, a soft melody drifted through the air—a familiar tune from a Disney classic. Kelly paused, her hand tightening on Andrew’s. "Do you hear that?"
-Andrew nodded. "It’s coming from the Enchanted Garden. Let’s check it out."
+"It's like stepping into a dream," Kelly said, her voice soft with awe. 
+Andrew grinned. "It's more than a dream. It's magic."
+As they approached the castle, a soft melody drifted through the air—a familiar tune from a Disney classic. Kelly paused, her hand tightening on Andrew's. "Do you hear that?"
+Andrew nodded. "It's coming from the Enchanted Garden. Let's check it out."
 They followed the music to a small, hidden courtyard tucked behind the castle. The garden was aglow with floating lanterns, their golden light reflected in a still pond. At the center stood a marble pedestal, and atop it was a snow globe unlike any they had ever seen. Inside, a tiny, swirling snowstorm encased a perfect miniature of the Sleeping Beauty Castle.
 A soft voice filled the garden, melodic and inviting. "To those who seek wonder, step forth and make your wish."
-Kelly looked at Andrew, her excitement bubbling over. "Do you think it’s real?"
+Kelly looked at Andrew, her excitement bubbling over. "Do you think it's real?"
 "Only one way to find out," he said, stepping toward the pedestal.
 As they placed their hands on the snow globe, the world around them seemed to shift. The garden faded away, replaced by a scene from a classic Disney fairy tale. They found themselves in the middle of a grand ballroom, its gilded walls and crystal chandeliers sparkling. Characters from across the Disney universe danced and laughed, their joy filling the air.
-"We’re in the middle of a ball!" Kelly exclaimed, her voice a mix of disbelief and delight.
+"We're in the middle of a ball!" Kelly exclaimed, her voice a mix of disbelief and delight.
 A tall figure approached, his cape swishing dramatically. It was the Beast, but his face was lit with kindness as he extended a paw. "Welcome to the Enchanted Ball. The magic brought you here because your hearts are full of wonder."
-Kelly curtsied with a laugh, while Andrew gave a small, awkward bow. "We’re honored," he said.
+Kelly curtsied with a laugh, while Andrew gave a small, awkward bow. "We're honored," he said.
 The Beast gestured to the floor. "Dance, and let the magic guide you."
 The music swelled, and Kelly and Andrew found themselves swept into a waltz. The other dancers—princes, princesses, and even a few mischievous sidekicks—twirled around them. It felt like time had slowed, each step light and effortless as if the floor itself carried them.
 As the final note of the waltz faded, a glittering light enveloped them, and they were back in the garden. The snow globe on the pedestal glowed faintly, as if acknowledging their journey.
@@ -371,53 +388,53 @@ As they walked back toward the castle, the fireworks began, bursting into brilli
   { 
     title: "A Balinese Monkey",
     subtitle: "Story Twelve",
-    content: `The villa rested at the edge of Ubud’s dense jungle, a place where shadows moved in rhythm with the breeze, and the air carried the faint scent of frangipani and damp earth. Andrew sat on the wide, weathered veranda, the wood cool under his feet despite the day’s heat. Before him, the jungle seemed alive, its greens layered like brushstrokes on an infinite canvas.
+    content: `The villa rested at the edge of Ubud's dense jungle, a place where shadows moved in rhythm with the breeze, and the air carried the faint scent of frangipani and damp earth. Andrew sat on the wide, weathered veranda, the wood cool under his feet despite the day's heat. Before him, the jungle seemed alive, its greens layered like brushstrokes on an infinite canvas.
 Kelly appeared from inside, her hair still damp from a shower. She set down a plate of tropical fruit, vibrant and fragrant, then folded herself gracefully onto the seat beside him.
-“You’ve been quiet all morning,” she said, her voice gentle, probing.
-Andrew didn’t answer immediately. His gaze lingered on the treetops, where sunlight played tricks among the leaves. “There’s something strange about this place,” he said at last. “It’s beautiful, but… it feels like it’s watching us.”
-Kelly laughed softly. “The jungle is always watching. It’s its nature.”
+“You've been quiet all morning,” she said, her voice gentle, probing.
+Andrew didn't answer immediately. His gaze lingered on the treetops, where sunlight played tricks among the leaves. “There's something strange about this place,” he said at last. “It's beautiful, but… it feels like it's watching us.”
+Kelly laughed softly. “The jungle is always watching. It's its nature.”
 “Maybe,” Andrew murmured, though his tone suggested something deeper.
-The days in Bali had been slow, deliberate. Andrew had felt an undercurrent in the air, a quiet hum that unsettled him in ways he couldn’t name.
+The days in Bali had been slow, deliberate. Andrew had felt an undercurrent in the air, a quiet hum that unsettled him in ways he couldn't name.
 It was later that day, in the monkey forest, that things began to shift.
 The Sacred Monkey Forest in Ubud was both enchanting and unnerving—a sanctuary where ancient trees held stories in their roots and monkeys roamed freely, their watchful eyes too intelligent to feel entirely benign.
 Andrew and Kelly strolled the paths, passing moss-covered statues and shrines. Kelly admired the playful antics of the macaques, laughing as a young one swung boldly from a low branch.
-“Careful,” Andrew warned. “They’re not just here for show.”
+“Careful,” Andrew warned. “They're not just here for show.”
 “I think they like me,” Kelly said, crouching to offer a piece of fruit to a particularly curious monkey. It snatched the fruit with surprising precision, then darted off into the trees.
-Andrew was about to respond when an older monkey appeared. It wasn’t large, but something about its presence demanded attention. Its fur was streaked with gray, and its eyes glinted with a depth that unsettled him.
+Andrew was about to respond when an older monkey appeared. It wasn't large, but something about its presence demanded attention. Its fur was streaked with gray, and its eyes glinted with a depth that unsettled him.
 The monkey paused before Andrew, its gaze locking onto his. Then, with deliberate slowness, it climbed onto the bench beside him and sat.
 “Well, this is new,” Kelly said, watching with amusement.
-Andrew couldn’t look away. The monkey’s stare was unbroken, its presence weighty. And then, as if deciding something, it spoke.
-Not in words exactly, but in Andrew’s mind, the voice soft and calm, like the rustle of leaves in the wind.
+Andrew couldn't look away. The monkey's stare was unbroken, its presence weighty. And then, as if deciding something, it spoke.
+Not in words exactly, but in Andrew's mind, the voice soft and calm, like the rustle of leaves in the wind.
 “You have a name,” the voice said. “A name that is yours, yet not yours.”
 Andrew blinked, his breath catching. “What are you—”
 “Do not be alarmed,” the voice continued. “You have carried a name that does not fit, and so I have taken it.”
 “What does that mean?” Andrew said aloud, startling Kelly.
-“What’s wrong?” Kelly asked, her amusement giving way to concern.
+“What's wrong?” Kelly asked, her amusement giving way to concern.
 Andrew turned to her, his voice faltering. “The monkey. It… spoke to me.”
 Kelly frowned, glancing at the monkey. It sat calmly, grooming itself, as if nothing unusual had occurred.
-“You need rest,” she said, reaching for his arm. “Let’s head back.”
-But Andrew couldn’t shake the feeling that something had shifted.
+“You need rest,” she said, reaching for his arm. “Let's head back.”
+But Andrew couldn't shake the feeling that something had shifted.
 
-Back at the villa, Andrew’s unease deepened. His thoughts felt muddled, as if something vital had been misplaced. Kelly tried to distract him with conversation, but his responses were distant.
+Back at the villa, Andrew's unease deepened. His thoughts felt muddled, as if something vital had been misplaced. Kelly tried to distract him with conversation, but his responses were distant.
 That night, he dreamed of a jungle alive with whispers. The voice of the monkey echoed in his mind: “A name that does not fit.”
 Over the following days, small but unsettling things began to happen. Andrew found himself forgetting minor details—dates, words, even the names of places they had visited. At first, he dismissed it as jet lag or the heat. But then Kelly noticed it too.
-“Andrew,” she said one evening, her voice tight with worry, “what’s going on? You’ve been… different.”
-“I don’t know,” he admitted. “It’s like… I’m losing parts of myself.”
+“Andrew,” she said one evening, her voice tight with worry, “what's going on? You've been… different.”
+“I don't know,” he admitted. “It's like… I'm losing parts of myself.”
 
 They returned to the monkey forest, Andrew desperate for answers. The older monkey appeared again, as if it had been waiting.
 “What did you do to me?” Andrew demanded, his voice trembling.
-The monkey’s eyes met his, calm and unwavering.
+The monkey's eyes met his, calm and unwavering.
 “I took your name,” the voice said. “It did not suit you.”
 “Give it back,” Andrew said, anger and fear rising in equal measure.
 The monkey tilted its head. “I cannot. Once taken, it is gone. But you will find another. One that fits.”
 Andrew stared, his chest tightening. “Why me?”
-The monkey’s voice softened. “Not all names are meant to last. Some are borrowed. Some are shed. Yours had grown heavy, and you did not see it.”
+The monkey's voice softened. “Not all names are meant to last. Some are borrowed. Some are shed. Yours had grown heavy, and you did not see it.”
 As the monkey disappeared into the trees, Andrew felt a strange clarity. The fear that had gripped him eased, replaced by something quieter, more uncertain, but not unwelcome.
 
-In the days that followed, Andrew began to feel lighter. His memory, though still patchy, didn’t trouble him as much. He realized that the name he had lost—the identity tied to it—wasn’t as essential as he’d once thought.
+In the days that followed, Andrew began to feel lighter. His memory, though still patchy, didn't trouble him as much. He realized that the name he had lost—the identity tied to it—wasn't as essential as he'd once thought.
 Kelly watched him with quiet concern, but as the trip came to an end, she noticed a change. Andrew was calmer, more deliberate in his actions.
 On their last evening, as they sat on the veranda overlooking the jungle, Kelly broke the silence. “Do you feel different?”
-Andrew thought for a moment. “Yes,” he said. “But maybe that’s okay.”
+Andrew thought for a moment. “Yes,” he said. “But maybe that's okay.”
 The jungle hummed softly in the distance, the shadows deep but not threatening. And though the monkey and his name were gone, Andrew felt, for the first time in a long while, unburdened.
 Somewhere in the dense greenery, the monkey watched, its knowing eyes glinting in the twilight. It had taken what was heavy, leaving behind something freer, something new.
 `
@@ -430,9 +447,9 @@ const introContent = {
 
 Welcome to our magical collection of memories from the year we met. Each chapter holds a special moment we've shared, carefully preserved like snowflakes in this digital storybook.
 
-This collection of stories is a journey across twelve worlds, each one reflecting a different kind of magic, love, and wonder. Inspired by our shared moments, favorite themes, and dreams, these tales were written as a way to capture the extraordinary in the everyday. They may seem fantastical, but at their heart, they’re grounded in the essence of us—our laughter, our adventures, and our quiet reflections.
+This collection of stories is a journey across twelve worlds, each one reflecting a different kind of magic, love, and wonder. Inspired by our shared moments, favorite themes, and dreams, these tales were written as a way to capture the extraordinary in the everyday. They may seem fantastical, but at their heart, they're grounded in the essence of us—our laughter, our adventures, and our quiet reflections.
 
-I wanted each story to feel like a small gift, carefully chosen and wrapped in imagination. Whether it's the whimsy of a magical ball, the quiet mystery of Bali, or the rhythm of a sky-pirate journey, these stories are pieces of the world I see when I’m with you.
+I wanted each story to feel like a small gift, carefully chosen and wrapped in imagination. Whether it's the whimsy of a magical ball, the quiet mystery of Bali, or the rhythm of a sky-pirate journey, these stories are pieces of the world I see when I'm with you.
 
 So settle in and let's relive these precious moments together...
 
@@ -791,22 +808,74 @@ function Stories() {
                 <Typography
                   sx={{
                     color: '#2c3e50',
-                    lineHeight: 1.8,
-                    fontSize: '1.1rem',
+                    lineHeight: 2.5,
+                    fontSize: '1.3rem',
                     whiteSpace: 'pre-line',
                     textAlign: 'justify',
                     fontFamily: '"Quicksand", sans-serif',
-                    animation: `${fadeIn} 0.6s ease-out`,
-                    px: 2,
+                    animation: `${storyFadeIn} 0.8s ease-out`,
+                    px: 6,
+                    py: 2,
                     position: 'relative',
+                    '& p': {
+                      marginBottom: '2em',
+                      maxWidth: '65ch',
+                      margin: '0 auto 2em auto',
+                    },
                     '& ::first-letter': {
-                      fontSize: '2.5em',
+                      fontSize: '4em',
                       fontFamily: '"Dancing Script", cursive',
                       fontWeight: 700,
                       color: '#c41e3a',
                       float: 'left',
-                      marginRight: '8px',
+                      marginRight: '16px',
+                      marginBottom: '8px',
                       lineHeight: '1',
+                      textShadow: '2px 2px 4px rgba(0,0,0,0.1)',
+                    },
+                    '& strong': {
+                      color: '#E67E22',
+                      fontWeight: 600,
+                      animation: `${letterSpacing} 3s infinite`,
+                      padding: '0 2px',
+                    },
+                    '& em': {
+                      fontStyle: 'italic',
+                      color: '#D68910',
+                      padding: '0 2px',
+                    },
+                    '& ::selection': {
+                      background: 'rgba(230, 126, 34, 0.2)',
+                      color: '#c41e3a',
+                    },
+                    '& p:first-of-type': {
+                      fontSize: '1.4rem',
+                      fontWeight: 500,
+                      color: '#34495e',
+                      borderLeft: '4px solid #c41e3a',
+                      paddingLeft: '24px',
+                      marginBottom: '3em',
+                      background: 'linear-gradient(to right, rgba(196, 30, 58, 0.1), transparent)',
+                      padding: '1.5em 2em',
+                      borderRadius: '0 8px 8px 0',
+                      animation: `${fadeIn} 1s ease-out`,
+                      maxWidth: '100%',
+                    },
+                    '& p:not(:first-of-type)': {
+                      animation: `${storyFadeIn} 0.8s ease-out`,
+                      animationFillMode: 'both',
+                      '&:nth-of-type(2)': { animationDelay: '0.2s' },
+                      '&:nth-of-type(3)': { animationDelay: '0.4s' },
+                      '&:nth-of-type(4)': { animationDelay: '0.6s' },
+                    },
+                    '& p:last-child': {
+                      marginTop: '3em',
+                      fontStyle: 'italic',
+                      textAlign: 'right',
+                      color: '#7f8c8d',
+                      borderTop: '1px solid rgba(0,0,0,0.1)',
+                      paddingTop: '1.5em',
+                      maxWidth: '100%',
                     },
                   }}
                 >
