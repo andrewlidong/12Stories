@@ -31,7 +31,7 @@ function Login() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (password === 'kelly') {
+    if (password === 'Andrew') {
       successChime.play().catch(e => console.log('Error playing sound:', e));
       navigate('/stories');
     } else {
