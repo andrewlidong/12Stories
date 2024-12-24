@@ -1,0 +1,70 @@
+.App {
+  min-height: 100vh;
+  position: relative;
+}
+
+#root {
+  height: 100%;
+}
+
+/* Page Transition Styles */
+.page {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  will-change: transform;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+}
+
+/* Book Edge Effect */
+.page::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 30px;
+  background: linear-gradient(to right, 
+    rgba(0,0,0,0.02) 0%,
+    rgba(0,0,0,0.05) 50%,
+    rgba(0,0,0,0.02) 100%);
+  transform: translateX(100%);
+  pointer-events: none;
+}
+
+/* Paper Texture */
+.paper-texture {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise' x='0' y='0'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100' height='100' filter='url(%23noise)' opacity='0.08'/%3E%3C/svg%3E");
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+/* Smooth Transitions */
+* {
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0,0,0,0.1);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c41e3a;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a01830;
+} 
